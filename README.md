@@ -1,4 +1,6 @@
-# MinimalAppUninstaller
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/807a1eeb-bf72-400b-a4c3-cfd5a47bb317" alt="64-mac" />
+</p>
 
 A clean, minimal macOS app uninstaller built with SwiftUI. Completely remove applications and all their related files.
 
