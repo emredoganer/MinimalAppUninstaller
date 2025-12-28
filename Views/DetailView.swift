@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DetailView: View {
     @EnvironmentObject var viewModel: AppListViewModel
+    @State private var showDeleteConfirmation = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -124,13 +125,25 @@ struct DetailView: View {
                         Spacer()
 
                         Button {
-                            viewModel.removeSelectedFiles()
+                            showDeleteConfirmation = true
                         } label: {
                             Label("Move to Trash", systemImage: "trash")
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(.red)
                         .disabled(viewModel.selectedFileCount == 0)
+                        .confirmationDialog(
+                            "Move \(viewModel.selectedFileCount) files to Trash?",
+                            isPresented: $showDeleteConfirmation,
+                            titleVisibility: .visible
+                        ) {
+                            Button("Move to Trash", role: .destructive) {
+                                viewModel.removeSelectedFiles()
+                            }
+                            Button("Cancel", role: .cancel) {}
+                        } message: {
+                            Text("This will move \(viewModel.formattedTotalSize) of files to Trash. You can restore them from Trash if needed.")
+                        }
                     }
                     .padding()
                 }
