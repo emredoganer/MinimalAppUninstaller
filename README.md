@@ -18,10 +18,6 @@ A clean, minimal macOS app uninstaller built with SwiftUI. Completely remove app
 
 - macOS 13.0 (Ventura) or later
 
-### Download Release
-
-Check the [Releases](https://github.com/emredoganer/MinimalAppUninstaller/releases) page for pre-built DMG.
-
 ### Build from Source
 
 Clone the repository:
@@ -31,7 +27,7 @@ git clone https://github.com/emredoganer/MinimalAppUninstaller.git
 cd MinimalAppUninstaller
 ```
 
-Build using the build script:
+**Option 1:** Build using the build script:
 
 ```bash
 ./build.sh
@@ -39,7 +35,7 @@ Build using the build script:
 
 The app will be at `dist/MinimalAppUninstaller.app`
 
-Or open `MinimalAppUninstaller.xcodeproj` in Xcode and build with `⌘R`.
+**Option 2:** Open `MinimalAppUninstaller.xcodeproj` in Xcode and build with `⌘R`.
 
 ## Permissions
 
