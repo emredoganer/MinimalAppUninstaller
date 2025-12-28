@@ -7,46 +7,52 @@ A clean, minimal macOS app uninstaller built with SwiftUI. Completely remove app
 ## Features
 
 - Scan all installed applications
-- Find related files (preferences, caches, support files, etc.)
+- Find related files (preferences, caches, support files, logs, etc.)
 - View file sizes by category
 - Move files to Trash safely
-- Clean, minimal UI
+- Clean, minimal native UI
 
-## Requirements
+## Installation
+
+### Requirements
 
 - macOS 13.0 (Ventura) or later
-- Full Disk Access permission (for scanning protected directories)
 
-## Building
+### Download Release
 
-### Option 1: Using Xcode (Recommended)
+Check the [Releases](https://github.com/emredoganer/MinimalAppUninstaller/releases) page for pre-built DMG.
 
-1. Open Xcode
-2. File > New > Project
-3. Select macOS > App
-4. Name it "MinimalAppUninstaller"
-5. Delete the auto-generated files
-6. Drag all the Swift files from this folder into the project
-7. Configure signing & capabilities:
-   - Turn OFF "App Sandbox"
-   - Add "MinimalAppUninstaller.entitlements"
-8. Build and run
+### Build from Source
 
-### Option 2: Using XcodeGen
-
-If you have [XcodeGen](https://github.com/yonaskolb/XcodeGen) installed:
+Clone the repository:
 
 ```bash
-# Install xcodegen if needed
-brew install xcodegen
-
-# Generate Xcode project
-cd ~/ClaudeProject/MinimalAppUninstaller
-xcodegen generate
-
-# Open the project
-open MinimalAppUninstaller.xcodeproj
+git clone https://github.com/emredoganer/MinimalAppUninstaller.git
+cd MinimalAppUninstaller
 ```
+
+Build using the build script:
+
+```bash
+./build.sh
+```
+
+The app will be at `dist/MinimalAppUninstaller.app`
+
+Or open `MinimalAppUninstaller.xcodeproj` in Xcode and build with `⌘R`.
+
+## Permissions
+
+This app requires **Full Disk Access** to scan directories like:
+- ~/Library/Containers
+- ~/Library/Group Containers
+- Some system directories
+
+To grant Full Disk Access:
+1. Open **System Settings** > **Privacy & Security** > **Full Disk Access**
+2. Add MinimalAppUninstaller to the list
+
+Without FDA, some files may not be detected.
 
 ## Project Structure
 
@@ -76,18 +82,9 @@ MinimalAppUninstaller/
     └── NSImage+AppIcon.swift        # Image helpers
 ```
 
-## Permissions
-
-This app requires **Full Disk Access** to scan directories like:
-- ~/Library/Containers
-- ~/Library/Group Containers
-- Some system directories
-
-Without FDA, some files may not be detected.
-
 ## License
 
-MIT License
+MIT License - see [LICENSE](LICENSE) for details.
 
 ## Credits
 
