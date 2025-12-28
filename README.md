@@ -20,7 +20,7 @@ A clean, minimal macOS app uninstaller built with SwiftUI. Completely remove app
 
 ### Build from Source
 
-Clone the repository:
+Download the latest release from [Releases](https://github.com/emredoganer/MinimalAppUninstaller/releases) page, or clone the repository:
 
 ```bash
 git clone https://github.com/emredoganer/MinimalAppUninstaller.git
