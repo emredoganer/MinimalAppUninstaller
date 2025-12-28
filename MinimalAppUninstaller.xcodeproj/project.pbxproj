@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		143F26203B5E6049BDBC1F4B /* CleanupProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5BB65234C06E0DEFE547A /* CleanupProgressView.swift */; };
+		1DB1A36330DB6C8FCF8394F8 /* MinimalAppUninstaller.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = "TEMP_0036A4FF-15BA-4C57-946E-B645D32C468A" /* MinimalAppUninstaller.xcodeproj */; };
+		241134F456177E52AB122B48 /* AppListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC90DB99111A7B19622E2E4 /* AppListViewModel.swift */; };
+		28A867CE5042B64E4124200C /* NSImage+AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72FBD55949918D3ADB77EF5 /* NSImage+AppIcon.swift */; };
+		48D48B8BFD7E9B4A2ED93620 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B26BE82CB01CE46A85FAE4 /* DetailView.swift */; };
+		54F8B7365DC2FAE18028D281 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7210C367ECC88AF66CB0FBE /* PermissionManager.swift */; };
+		6EE2ABA254B6E3A426F8CFF2 /* FileRemover.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FBEC80D1BB41F439494E61 /* FileRemover.swift */; };
+		7F00C6F870F8FB9768BE60BC /* AppRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6649D04CC3ADBA24C0C7033C /* AppRowView.swift */; };
+		7F992174A1F66CF2A95C04C3 /* MinimalAppUninstallerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = "TEMP_69A2122D-A057-4688-B97E-66B2CDD7990F" /* MinimalAppUninstallerApp.swift */; };
+		9FF2EAACB30BAAFEA2E37715 /* FileScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84E1FAE0ADA286FBDDFC4A /* FileScanner.swift */; };
+		AD2A9F444A72AB7CBA7FF6C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA19D1483991F056826A1D /* ContentView.swift */; };
+		B88E5F810398EAB416A2C776 /* AppScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0AED00E5B94174C141C817 /* AppScanner.swift */; };
+		DF5BB40772034E770CF98ADB /* FileCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7848DD0BAEB608712DA46488 /* FileCategory.swift */; };
+		E69298B46C1B9AC3FB289895 /* InstalledApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B4BB53CB325774A7363EA9 /* InstalledApp.swift */; };
+		E9D00C7FC5B017A33709AD37 /* FileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702D9818C599FD32DB18C3E /* FileRowView.swift */; };
+		E9DF48A365FABEA96B9246AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C94235F8A2C15D95373EA3B /* Assets.xcassets */; };
+		F92E17B54B33944BDD8632B5 /* RelatedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB4CA81B034B664DFFD466 /* RelatedFile.swift */; };
+		FC5B6CE1C05911E557B76143 /* URL+FileSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962EC42B333B0EBA7FCA6D1 /* URL+FileSize.swift */; };
+		FECE70AFF33EFC1A62C7DBB0 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C06F942C5D95821BCAB67 /* AppListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07AB4CA81B034B664DFFD466 /* RelatedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedFile.swift; sourceTree = "<group>"; };
+		1C94235F8A2C15D95373EA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32B4BB53CB325774A7363EA9 /* InstalledApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledApp.swift; sourceTree = "<group>"; };
+		4B0AED00E5B94174C141C817 /* AppScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScanner.swift; sourceTree = "<group>"; };
+		6649D04CC3ADBA24C0C7033C /* AppRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowView.swift; sourceTree = "<group>"; };
+		6962EC42B333B0EBA7FCA6D1 /* URL+FileSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+FileSize.swift"; sourceTree = "<group>"; };
+		72B26BE82CB01CE46A85FAE4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7848DD0BAEB608712DA46488 /* FileCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCategory.swift; sourceTree = "<group>"; };
+		872C06F942C5D95821BCAB67 /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
+		9E84E1FAE0ADA286FBDDFC4A /* FileScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileScanner.swift; sourceTree = "<group>"; };
+		A2B5BB65234C06E0DEFE547A /* CleanupProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupProgressView.swift; sourceTree = "<group>"; };
+		BDAA19D1483991F056826A1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D7210C367ECC88AF66CB0FBE /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		E08C84A7409F59349871B7AD /* MinimalAppUninstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinimalAppUninstaller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FBEC80D1BB41F439494E61 /* FileRemover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRemover.swift; sourceTree = "<group>"; };
+		E702D9818C599FD32DB18C3E /* FileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRowView.swift; sourceTree = "<group>"; };
+		F72FBD55949918D3ADB77EF5 /* NSImage+AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+AppIcon.swift"; sourceTree = "<group>"; };
+		FDC90DB99111A7B19622E2E4 /* AppListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewModel.swift; sourceTree = "<group>"; };
+		"TEMP_0036A4FF-15BA-4C57-946E-B645D32C468A" /* MinimalAppUninstaller.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MinimalAppUninstaller.xcodeproj; sourceTree = "<group>"; };
+		"TEMP_681D9022-EA01-4239-8FF5-5BF5D87CF1AC" /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		"TEMP_69A2122D-A057-4688-B97E-66B2CDD7990F" /* MinimalAppUninstallerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalAppUninstallerApp.swift; sourceTree = "<group>"; };
+		"TEMP_AEBA87AC-E54E-48E1-93ED-273D2199CEA9" /* MinimalAppUninstaller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MinimalAppUninstaller.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		223122C41BDC7EC6976EE7D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7848DD0BAEB608712DA46488 /* FileCategory.swift */,
+				32B4BB53CB325774A7363EA9 /* InstalledApp.swift */,
+				07AB4CA81B034B664DFFD466 /* RelatedFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3EC8D97CB5D959D3FF7CCC76 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FDC90DB99111A7B19622E2E4 /* AppListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		481DC90BEE59AC725CD5A666 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				872C06F942C5D95821BCAB67 /* AppListView.swift */,
+				6649D04CC3ADBA24C0C7033C /* AppRowView.swift */,
+				A2B5BB65234C06E0DEFE547A /* CleanupProgressView.swift */,
+				BDAA19D1483991F056826A1D /* ContentView.swift */,
+				72B26BE82CB01CE46A85FAE4 /* DetailView.swift */,
+				E702D9818C599FD32DB18C3E /* FileRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5365A55C796B90EB3E081AE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C94235F8A2C15D95373EA3B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5B3043A8E666566B41FEF346 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E08C84A7409F59349871B7AD /* MinimalAppUninstaller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99FD37DDD46FF7E1A210636C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4B0AED00E5B94174C141C817 /* AppScanner.swift */,
+				E3FBEC80D1BB41F439494E61 /* FileRemover.swift */,
+				9E84E1FAE0ADA286FBDDFC4A /* FileScanner.swift */,
+				D7210C367ECC88AF66CB0FBE /* PermissionManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B5AB1A01E05848B28CCDAC4C = {
+			isa = PBXGroup;
+			children = (
+				D504EF26D6653742956BB7BE /* Extensions */,
+				223122C41BDC7EC6976EE7D5 /* Models */,
+				5365A55C796B90EB3E081AE2 /* Resources */,
+				99FD37DDD46FF7E1A210636C /* Services */,
+				3EC8D97CB5D959D3FF7CCC76 /* ViewModels */,
+				481DC90BEE59AC725CD5A666 /* Views */,
+				5B3043A8E666566B41FEF346 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D504EF26D6653742956BB7BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F72FBD55949918D3ADB77EF5 /* NSImage+AppIcon.swift */,
+				6962EC42B333B0EBA7FCA6D1 /* URL+FileSize.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		"TEMP_8C15AA0C-6FD0-409C-81B4-81049BB345AB" /* MinimalAppUninstaller */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_69A2122D-A057-4688-B97E-66B2CDD7990F" /* MinimalAppUninstallerApp.swift */,
+				"TEMP_AEBA87AC-E54E-48E1-93ED-273D2199CEA9" /* MinimalAppUninstaller.entitlements */,
+				"TEMP_0036A4FF-15BA-4C57-946E-B645D32C468A" /* MinimalAppUninstaller.xcodeproj */,
+				"TEMP_681D9022-EA01-4239-8FF5-5BF5D87CF1AC" /* Info.plist */,
+				3EC8D97CB5D959D3FF7CCC76 /* ViewModels */,
+				5365A55C796B90EB3E081AE2 /* Resources */,
+				223122C41BDC7EC6976EE7D5 /* Models */,
+				D504EF26D6653742956BB7BE /* Extensions */,
+				481DC90BEE59AC725CD5A666 /* Views */,
+				99FD37DDD46FF7E1A210636C /* Services */,
+			);
+			path = MinimalAppUninstaller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D772E2B31D96469A4C4937C /* MinimalAppUninstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAEBCDD549CD75D3D2AB1356 /* Build configuration list for PBXNativeTarget "MinimalAppUninstaller" */;
+			buildPhases = (
+				60680BE10682B2689D79B809 /* Sources */,
+				47E11F4EF8628ABDCB6DB824 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinimalAppUninstaller;
+			packageProductDependencies = (
+			);
+			productName = MinimalAppUninstaller;
+			productReference = E08C84A7409F59349871B7AD /* MinimalAppUninstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCD365F8F277C5AE2B943454 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4D772E2B31D96469A4C4937C = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3CC3AFCD607563B26B0B1859 /* Build configuration list for PBXProject "MinimalAppUninstaller" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B5AB1A01E05848B28CCDAC4C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D772E2B31D96469A4C4937C /* MinimalAppUninstaller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47E11F4EF8628ABDCB6DB824 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DF48A365FABEA96B9246AE /* Assets.xcassets in Resources */,
+				1DB1A36330DB6C8FCF8394F8 /* MinimalAppUninstaller.xcodeproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60680BE10682B2689D79B809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECE70AFF33EFC1A62C7DBB0 /* AppListView.swift in Sources */,
+				241134F456177E52AB122B48 /* AppListViewModel.swift in Sources */,
+				7F00C6F870F8FB9768BE60BC /* AppRowView.swift in Sources */,
+				B88E5F810398EAB416A2C776 /* AppScanner.swift in Sources */,
+				143F26203B5E6049BDBC1F4B /* CleanupProgressView.swift in Sources */,
+				AD2A9F444A72AB7CBA7FF6C2 /* ContentView.swift in Sources */,
+				48D48B8BFD7E9B4A2ED93620 /* DetailView.swift in Sources */,
+				DF5BB40772034E770CF98ADB /* FileCategory.swift in Sources */,
+				6EE2ABA254B6E3A426F8CFF2 /* FileRemover.swift in Sources */,
+				E9D00C7FC5B017A33709AD37 /* FileRowView.swift in Sources */,
+				9FF2EAACB30BAAFEA2E37715 /* FileScanner.swift in Sources */,
+				E69298B46C1B9AC3FB289895 /* InstalledApp.swift in Sources */,
+				7F992174A1F66CF2A95C04C3 /* MinimalAppUninstallerApp.swift in Sources */,
+				28A867CE5042B64E4124200C /* NSImage+AppIcon.swift in Sources */,
+				54F8B7365DC2FAE18028D281 /* PermissionManager.swift in Sources */,
+				F92E17B54B33944BDD8632B5 /* RelatedFile.swift in Sources */,
+				FC5B6CE1C05911E557B76143 /* URL+FileSize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00D61AB42861B51AD52F1178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		07DD7D636CCFD2FA8A05A2ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MinimalAppUninstaller.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emredoganer.MinimalAppUninstaller;
+				PRODUCT_NAME = MinimalAppUninstaller;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8A6087F62D07ABF8E564EB7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MinimalAppUninstaller.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emredoganer.MinimalAppUninstaller;
+				PRODUCT_NAME = MinimalAppUninstaller;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B611E47C00F41243AD368E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CC3AFCD607563B26B0B1859 /* Build configuration list for PBXProject "MinimalAppUninstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B611E47C00F41243AD368E9B /* Debug */,
+				00D61AB42861B51AD52F1178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DAEBCDD549CD75D3D2AB1356 /* Build configuration list for PBXNativeTarget "MinimalAppUninstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A6087F62D07ABF8E564EB7E /* Debug */,
+				07DD7D636CCFD2FA8A05A2ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCD365F8F277C5AE2B943454 /* Project object */;
+}
