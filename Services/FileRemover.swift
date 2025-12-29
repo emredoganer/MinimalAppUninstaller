@@ -141,14 +141,38 @@ class FileRemover {
             return RemovalResult(file: file, success: false, error: .fileNotFound(url))
         }
 
+        // First, try normal trashItem
         do {
             try fileManager.trashItem(at: url, resultingItemURL: nil)
             return RemovalResult(file: file, success: true, error: nil)
-        } catch let error as NSError {
-            if error.code == NSFileWriteNoPermissionError {
-                return RemovalResult(file: file, success: false, error: .permissionDenied(url))
-            }
-            return RemovalResult(file: file, success: false, error: .unknown(url, error))
+        } catch {
+            // Normal trash failed, try with admin privileges
+            return removeWithAdminPrivileges(file)
         }
+    }
+
+    /// Remove file using admin privileges (for root-owned App Store apps)
+    private func removeWithAdminPrivileges(_ file: RelatedFile) -> RemovalResult {
+        let url = file.path
+
+        // Escape single quotes for shell: replace ' with '\''
+        let escapedPath = url.path.replacingOccurrences(of: "'", with: "'\\''")
+
+        // Use rm -rf with admin privileges for root-owned files
+        let script = """
+        do shell script "rm -rf '\(escapedPath)'" with administrator privileges
+        """
+
+        var error: NSDictionary?
+        if let scriptObject = NSAppleScript(source: script) {
+            scriptObject.executeAndReturnError(&error)
+
+            // Check if file was removed
+            if error == nil && !fileManager.fileExists(atPath: url.path) {
+                return RemovalResult(file: file, success: true, error: nil)
+            }
+        }
+
+        return RemovalResult(file: file, success: false, error: .permissionDenied(url))
     }
 }
